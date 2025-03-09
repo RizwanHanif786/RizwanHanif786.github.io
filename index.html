@@ -14,27 +14,160 @@
     
     <!-- Navbar -->
     <nav class="fixed top-0 left-0 w-full bg-gray-800 bg-opacity-90 py-4 px-6 flex justify-between items-center">
-        <a href="#" class="text-xl font-bold text-green-400">Rizwan Hanif</a>
-        <div>
-            <a href="#about" class="mx-3 text-gray-300 hover:text-green-400">About</a>
-            <a href="#projects" class="mx-3 text-gray-300 hover:text-green-400">Projects</a>
-            <a href="#experience" class="mx-3 text-gray-300 hover:text-green-400">Experience</a>
-            <a href="#contact" class="mx-3 text-gray-300 hover:text-green-400">Contact</a>
-         
+        <a href="#" class="text-xl font-bold text-green-400">PortFolio</a>
+        <div class="cursor-pointer" id="burger">
+            <a  class="mx-3 text-gray-300 hover:text-green-400" onclick="smoothScroll('#about')">About</a>
+            <a  class="mx-3 text-gray-300 hover:text-green-400" onclick="smoothScroll('#skills')">Skills</a>
+            <a  class="mx-3 text-gray-300 hover:text-green-400" onclick="smoothScroll('#projects')">Projects</a>
+            <a  class="mx-3 text-gray-300 hover:text-green-400" onclick="smoothScroll('#experience')">Experience</a>
+            <a  class="mx-3 text-gray-300 hover:text-green-400" onclick="smoothScroll('#contact')">Contact</a>
         </div>
+        <script>
+            function smoothScroll(target) {
+            document.querySelector(target).scrollIntoView({
+                behavior: 'smooth'
+            });
+            }
+        </script>
     </nav>
 
     <!-- Hero Section -->
-    <section class="h-screen flex flex-col justify-center items-center text-center px-6">
+    <section class="h-screen flex flex-col justify-center items-center text-center px-6 ">
+        <img src="assets/profile.png" alt="Rizwan Hanif" class="w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full mb-4 border-4 border-green-400 object-cover mt-8">
         <h1 class="text-4xl sm:text-6xl font-bold text-green-400">Hi, I'm Rizwan Hanif</h1>
         <p class="text-lg sm:text-2xl mt-4 text-gray-400">Full Stack Developer | IT Professional</p>
         <a href="#projects" class="mt-6 px-6 py-3 bg-green-400 text-gray-900 font-bold rounded-lg hover:bg-green-300">View My Work</a>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="py-20 px-6 max-w-4xl mx-auto text-center">
+    <section id="about" class="pt-[2rem] pb-[2rem] px-6 max-w-4xl mx-auto text-center bg-gray-800 rounded-lg shadow-md my-10">
         <h2 class="text-3xl font-bold text-green-400">About Me</h2>
-        <p class="mt-4 text-gray-400">A highly motivated IT professional with 5+ years of experience in web, mobile, and server-side development. Skilled in both front-end and back-end technologies, with expertise in developing scalable, high-performance applications.</p>
+        <div class="mt-4 text-gray-400 space-y-4">
+            <p>A highly motivated IT professional with 5+ years of experience in web, mobile, and server-side development. Skilled in both front-end and back-end technologies, with expertise in developing scalable, high-performance applications.</p>
+            <p>Passionate about learning new technologies and staying up-to-date with industry trends. Strong problem-solving skills and the ability to work effectively in a team environment. Committed to delivering high-quality code and continuously improving development processes.</p>
+        </div>
+    </section>
+
+     <!-- Skills Section -->
+    <section id="skills" class="py-20 px-6 max-w-4xl mx-auto text-center bg-gray-800 rounded-lg shadow-md">
+    <h2 class="text-3xl font-bold text-green-400">Skills</h2>
+    <div class="mt-8 space-y-6">
+        <div>
+            <h3 class="text-2xl font-semibold text-green-400">Frontend</h3>
+            <div class="flex flex-wrap justify-center mt-4">
+                <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"
+                    alt="HTML">
+                <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"
+                    alt="CSS">
+                <img src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white"
+                    alt="Bootstrap">
+                <img src="https://img.shields.io/badge/SASS-CC6699?style=for-the-badge&logo=sass&logoColor=white"
+                    alt="SASS">
+                <img src="https://img.shields.io/badge/SCSS-CC6699?style=for-the-badge&logo=sass&logoColor=white"
+                    alt="SCSS">
+                <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"
+                    alt="JavaScript">
+                <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white"
+                    alt="TypeScript">
+                <img src="https://img.shields.io/badge/Angular-DC0030?style=for-the-badge&logo=angular&logoColor=white"
+                    alt="Angular">
+                <img src="https://img.shields.io/badge/NgRx-BF4080?style=for-the-badge&logo=ngrx&logoColor=white"
+                    alt="NgRx">
+                <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"
+                    alt="React">
+                <img src="https://img.shields.io/badge/Redux-764ABC?style=for-the-badge&logo=redux&logoColor=white"
+                    alt="Redux">
+                <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white"
+                    alt="Next.js">
+                <img src="https://img.shields.io/badge/Astro-FF5D01?style=for-the-badge&logo=astro&logoColor=white"
+                    alt="Astro">
+                <img src="https://img.shields.io/badge/Material--UI-007FFF?style=for-the-badge&logo=mui&logoColor=white"
+                    alt="Material UI">
+                <img src="https://img.shields.io/badge/PrimeNG-1A73E8?style=for-the-badge&logo=primeng&logoColor=white"
+                    alt="PrimeNG">
+                <img src="https://img.shields.io/badge/PrimeFlex-673AB7?style=for-the-badge&logo=primeng&logoColor=white"
+                    alt="PrimeFlex">
+                <img src="https://img.shields.io/badge/AG%20Grid-1572B6?style=for-the-badge&logo=ag-grid&logoColor=white"
+                    alt="AG Grid">
+                <img src="https://img.shields.io/badge/Socket.io-010101?style=for-the-badge&logo=socket.io&logoColor=white"
+                    alt="Socket.io">
+                <img src="https://img.shields.io/badge/Google%20Maps-4285F4?style=for-the-badge&logo=googlemaps&logoColor=white"
+                    alt="Google Maps">
+                <img src="https://img.shields.io/badge/Ionic-3880FF?style=for-the-badge&logo=ionic&logoColor=white"
+                    alt="Ionic">
+                <img src="https://img.shields.io/badge/Capacitor-119EFF?style=for-the-badge&logo=capacitor&logoColor=white"
+                    alt="Capacitor">
+                <img src="https://img.shields.io/badge/Twilio-F22F46?style=for-the-badge&logo=twilio&logoColor=white"
+                    alt="Twilio">
+                <img src="https://img.shields.io/badge/Highcharts-0073E6?style=for-the-badge&logo=highcharts&logoColor=white"
+                    alt="Highcharts">
+            </div>
+        </div>
+        <div>
+            <h3 class="text-2xl font-semibold text-green-400">Backend</h3>
+            <div class="flex flex-wrap justify-center mt-4">
+                <img src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white"
+                    alt="Node.js">
+                <img src="https://img.shields.io/badge/NestJS-E0234E?style=for-the-badge&logo=nestjs&logoColor=white"
+                    alt="NestJS">
+                <img src="https://img.shields.io/badge/Express.js-404D59?style=for-the-badge&logo=express&logoColor=white"
+                    alt="ExpressJS">
+                <img src="https://img.shields.io/badge/GraphQL-E10098?style=for-the-badge&logo=graphql&logoColor=white"
+                    alt="GraphQL">
+                <img src="https://img.shields.io/badge/Cheerio-FB9A00?style=for-the-badge&logo=cheerio&logoColor=white"
+                    alt="Cheerio">
+                <img src="https://img.shields.io/badge/Puppeteer-40B5A4?style=for-the-badge&logo=puppeteer&logoColor=white"
+                    alt="Puppeteer">
+                <img src="https://img.shields.io/badge/Redis-D82C20?style=for-the-badge&logo=redis&logoColor=white"
+                    alt="Redis">
+                <img src="https://img.shields.io/badge/Stripe-008CDD?style=for-the-badge&logo=stripe&logoColor=white"
+                    alt="Stripe">
+            </div>
+        </div>
+        <div>
+            <h3 class="text-2xl font-semibold text-green-400">Databases</h3>
+            <div class="flex flex-wrap justify-center mt-4">
+                <img src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white"
+                    alt="MongoDB">
+                <img src="https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black"
+                    alt="Firebase">
+                <img src="https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white"
+                    alt="Supabase">
+                <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white"
+                    alt="PostgreSQL">
+                <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white"
+                    alt="MySQL">
+            </div>
+        </div>
+        <div>
+            <h3 class="text-2xl font-semibold text-green-400">Unit Testing and Automation</h3>
+            <div class="flex flex-wrap justify-center mt-4">
+                <img src="https://img.shields.io/badge/Karma-4479A1?style=for-the-badge&logo=karma&logoColor=white"
+                    alt="Karma">
+                <img src="https://img.shields.io/badge/Jasmine-8A4182?style=for-the-badge&logo=jasmine&logoColor=white"
+                    alt="Jasmine">
+                <img src="https://img.shields.io/badge/Cypress-17202C?style=for-the-badge&logo=cypress&logoColor=white"
+                    alt="Cypress">
+            </div>
+        </div>
+        <div>
+            <h3 class="text-2xl font-semibold text-green-400">Project Management & Version Control</h3>
+            <div class="flex flex-wrap justify-center mt-4">
+                <img src="https://img.shields.io/badge/Jira-0052CC?style=for-the-badge&logo=jira&logoColor=white"
+                    alt="Jira">
+                <img src="https://img.shields.io/badge/Leantime-1565C0?style=for-the-badge&logo=leantime&logoColor=white"
+                    alt="Leantime">
+                <img src="https://img.shields.io/badge/Trello-0052CC?style=for-the-badge&logo=trello&logoColor=white"
+                    alt="Trello">
+                <img src="https://img.shields.io/badge/Bitbucket-0052CC?style=for-the-badge&logo=bitbucket&logoColor=white"
+                    alt="Bitbucket">
+                <img src="https://img.shields.io/badge/GitLab-FC6D26?style=for-the-badge&logo=gitlab&logoColor=white"
+                    alt="GitLab">
+                <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"
+                    alt="GitHub">
+            </div>
+        </div>
+    </div>
     </section>
 
     <!-- Projects Section -->
@@ -57,6 +190,14 @@
                 <h3 class="text-xl font-semibold text-green-400"><a href="https://www.kinettix.com/" target="_blank">Kinettix Global Field Techs</a></h3>
                 <p class="text-gray-400">A global IT service management system.</p>
             </div>
+            <div class="bg-gray-800 p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-green-400"><a href="https://washbuddy-frontend.vercel.app/" target="_blank">Wash Buddy</a></h3>
+                <p class="text-gray-400">An on-demand Car Wash service platform.</p>
+            </div>
+            <div class="bg-gray-800 p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-green-400"><a href="https://college-to-hoops.vercel.app/" target="_blank">Hoops To College</a></h3>
+                <p class="text-gray-400">A platform connecting aspiring basketball players with college opportunities.</p>
+            </div>
         </div>
     </section>
 
@@ -65,16 +206,58 @@
         <h2 class="text-3xl font-bold text-green-400 text-center">Professional Experience</h2>
         <div class="mt-8 space-y-6">
             <div class="bg-gray-800 p-6 rounded-lg shadow-md">
-                <h3 class="text-xl font-semibold text-green-400"><a href="https://www.shk-technology.com/" target="_blank">SHK Technologies</a> - Senior Frontend Developer</h3>
-                <p class="text-gray-400">Designed and developed responsive UI/UX, ensuring accessibility and usability.</p>
+                <h3 class="text-xl font-semibold text-green-400">
+                    <a href="https://www.shk-technology.com/" target="_blank">SHK Technologies</a> - Senior Frontend Developer
+                </h3>
+                <ul class="list-disc list-outside pl-5 text-gray-400">
+                    <li>Designed and developed responsive UI/UX, focusing on usability and accessibility using Astro.js and React.js.</li>
+                    <li>Ensured mobile responsiveness and developed fully functional websites with a strong focus on SEO optimization to improve search rankings and online visibility.</li>
+                </ul>
             </div>
+            
             <div class="bg-gray-800 p-6 rounded-lg shadow-md">
                 <h3 class="text-xl font-semibold text-green-400">TreatAnyone - Software Developer</h3>
-                <p class="text-gray-400">Developed and optimized UI/UX components, improving application performance.</p>
+                <ul class="list-disc list-inside text-gray-400">
+                    <li>Developed and implemented intuitive UI/UX components, enhancing user experience and usability.</li>
+                    <li>Introduced new feature flows, addressing evolving client needs and product requirements.</li>
+                    <li>Utilized RxJS for efficient reactive programming, streamlining data flow and event handling.</li>
+                    <li>Conducted code optimization to improve application performance and responsiveness.</li>
+                    <li>Wrote unit tests using Karma and Jasmine to ensure robust test coverage and application stability.</li>
+                    <li>Collaborated closely with product teams to perform functional analysis and testing.</li>
+                </ul>
             </div>
             <div class="bg-gray-800 p-6 rounded-lg shadow-md">
                 <h3 class="text-xl font-semibold text-green-400">Total Party Planner - Full Stack Developer</h3>
-                <p class="text-gray-400">Built responsive web applications using modern JavaScript frameworks.</p>
+                <ul class="list-disc list-inside text-gray-400">
+                    <li>Built responsive web applications using modern JavaScript frameworks.</li>
+                    <li>Built responsive, cross-browser-compatible designs to ensure consistent experiences across devices.</li>
+                    <li>Automated build processes using Gulp.js, optimizing development workflows.</li>
+                    <li>Integrated React and CSS for a modular and scalable UI/UX.</li>
+                    <li>Participated in agile development processes using Bitbucket for code management and JIRA.</li>
+                </ul>
+            </div>
+
+            <div class="bg-gray-800 p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-green-400">TopFarma - Full Stack Developer</h3>
+                <ul class="list-disc list-inside text-gray-400">
+                    <li>Built responsive web applications using modern JavaScript frameworks.</li>
+                    <li>Developed reusable UI components and dynamic filters using Angular Material.</li>
+                    <li>Addressed cross-browser compatibility issues for consistent performance across platforms.</li>
+                    <li>Optimized code and performed regular bug fixes, improving overall application stability.</li>
+                    <li>Managed version control and code repositories using GitLab.</li>
+                </ul>
+              
+            </div>
+            <div class="bg-gray-800 p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-green-400">TechFusionITC - Senior Quality Assurance</h3>
+                <ul class="list-disc list-inside text-gray-400">
+                    <li>Created and managed tickets for tracking development progress and issues.</li>
+                    <li>Performed manual and automated testing to ensure software quality and functionality.</li>
+                    <li>Identified and documented bugs, working closely with developers to resolve them.</li>
+                    <li>Wrote detailed release notes to communicate updates and changes to stakeholders.</li>
+                    <li>Developed and maintained test plans, test cases, and test scripts.</li>
+                    <li>Ensured cross-browser compatibility and consistent performance across platforms.</li>
+                </ul>
             </div>
         </div>
     </section>
@@ -82,10 +265,13 @@
     <!-- Contact Section -->
     <section id="contact" class="py-20 px-6 max-w-4xl mx-auto text-center">
         <h2 class="text-3xl font-bold text-green-400">Get in Touch</h2>
-        <p class="mt-4 text-gray-400">📧 Email: <a href="mailto:Rizwan633@gmail.com" class="text-green-400 hover:underline">Rizwanhanif633@gmail.com</a></p>
-        <p class="text-gray-400">📞 Phone: <a href="tel:+923086871971" class="text-green-400 hover:underline">+92 308 687 1971</a></p>
-        <p class="text-gray-400">🔗 GitHub: <a href="https://github.com/RizwanHanif786" class="text-green-400 hover:underline">github.com/RizwanHanif786</a></p>
-        
+        <div class="mt-4 text-gray-400 text-center"></div>
+            <p>📧 Email: <a href="mailto:Rizwan633@gmail.com" class="text-green-400 hover:underline">Rizwanhanif633@gmail.com</a></p>
+            <p>📞 Phone: <a href="tel:+923086871971" class="text-green-400 hover:underline">+92 308 687 1971</a></p>
+            <p>🔗 GitHub: <a href="https://github.com/RizwanHanif786" class="text-green-400 hover:underline">RizwanHanif786</a></p>
+            <p><img src="https://www.upwork.com/favicon.ico" alt="Upwork" class="inline w-5 h-5 mr-1"> Upwork: <a href="https://www.upwork.com/freelancers/~01e5dcc9e4831cd9cd" class="text-green-400 hover:underline">Rizwan Hanif</a></p>
+            <p>📍 Location: Multan, Pakistan</p>
+        </div>
     </section>
 </body>
 </html>
